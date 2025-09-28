@@ -1,7 +1,7 @@
 {
   "name": "projekt-management-tool",
   "version": "1.0.0",
-  "description": "Ein Projektmanagement-Tool für Teams",
+  "description": "A project management tool for teams",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
