@@ -13,7 +13,7 @@ app.use(express.json());
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/projektmanagement';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected...'))
-  .catch(err => console.log('MongoDB connection error:', err));
+  .catch(err => console.log('MongoDB connection error:', err.message));
 
 // Start Server
 app.listen(PORT, () => {
